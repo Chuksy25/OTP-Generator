@@ -5,7 +5,7 @@ function Generator1() {
   const [otp, setOtp] = useState("");
 
   const generateOtp = () => {
-    const randomOtp = Math.floor(1000 + Math.random() * 9000).toString();
+    const randomOtp = Math.floor(100000 + Math.random() * 900000).toString();
     setOtp(randomOtp);
   };
 
@@ -26,7 +26,7 @@ function Generator1() {
             <OtpInput
               value={otp}
               onChange={setOtp}
-              numInputs={4}
+              numInputs={6}
               renderSeparator={<span className="w-10  p-5">-</span>}
               renderInput={(props) => <input {...props} className="text-5xl"/>}
             />
@@ -54,7 +54,3 @@ function Generator1() {
 }
 
 export default Generator1;
-
-// const [guess, setGuess] = useState('')
-// const [message, setMessage] = useState('')
-// const [attempts, setAttempts] = useState(0)
