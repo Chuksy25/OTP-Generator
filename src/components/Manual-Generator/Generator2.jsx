@@ -4,10 +4,10 @@ function Generator2() {
   const [otpDisplay, setOtpDisplay] = useState();
   let createOTP = () => {
     //Define the length of the OTP
-    const otpLength = 100000;
+    const otpValue = 100000;
 
     //Define function to generate random OTP numbers
-    const otp = Math.floor(otpLength + Math.random() * 900000);
+    const otp = Math.floor(otpValue + Math.random() * 900000);
     setOtpDisplay(otp);
   };
 
